@@ -1,0 +1,39 @@
+import { defineField, defineType } from 'sanity'
+
+export default defineType({
+    name:'tenacyTable',
+    title:'TenacyTable',
+    type:'document',
+    fields:[
+        defineField({
+            name:'name',
+            title:'Name',
+            type:'string',
+        }),
+        defineField({
+            name:'slug',
+            title:'Slug',
+            type:'slug',
+        }),
+        defineField({
+            name:'date',
+            title:'Date',
+            type:'string',
+        }),
+        defineField({
+            name:'price',
+            title:'Price',
+            type:'string',
+        }),
+        defineField({
+            name:'income',
+            title:'Income',
+            type:'string',
+        }),
+        defineField({
+            name:'image',
+            title:'Image',
+            type:'string'
+        }),
+    ]
+})

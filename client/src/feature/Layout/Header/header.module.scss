@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  height: 100px;
+  margin-bottom: 24px;
+  padding: 0 48px 0 112px;
+  z-index: 996;
+  border-bottom: 1px solid #F0EFFB;
+  &__left {
+    h1 {
+      font-family: Plus Jakarta Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 36px */
+      letter-spacing: -0.24px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    .bell {
+      border-right: 1px solid #000929;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-right: 24px;
+    }
+    svg {
+      font-size: 24px;
+      background-color: #f7f7fd;
+      border-radius: 16px;
+    }
+    .person {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      select {
+        width: 153px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        color: #000929;
+        align-items: center;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1.5px solid var(--shades-of-purple-purple-92, #e0def7);
+        background: var(--main-color-white, #fff);
+        box-shadow: 0px 0px 40px 0px rgba(112, 101, 240, 0.1);
+        padding-left: 20px;
+      }
+      p {
+        position: absolute;
+        left: 10px;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        background-color: #7065f0;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+      }
+    }
+  }
+  @media(max-width: 768px){
+    padding-left: 25px;
+    padding-right: 15px;
+    &__left{
+      h1{
+        font-size: 12px;
+      }
+    }
+    &__right{
+      .bell{
+        height: 12px;
+        padding-right: 4px;
+        svg{
+          font-size: 12px;
+        }
+      }
+      .person{
+        select{
+          width: 90px;
+          height: 30px;
+          font-size: 10px;
+        }
+        p{
+          width: 16px;
+          height: 16px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  @media(max-width:320px){
+    
+      padding-right: 5px !important;
+      &__left{
+        h1{
+          font-size: 8px;
+        }
+      }
+      &__right{
+        gap: 5px;
+      }
+    }
+  
+}

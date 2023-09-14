@@ -1,0 +1,62 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 48px;
+  position: fixed;
+  top: 0;
+  padding: 28px 24px;
+  background-color: #fff;
+  z-index: 999;
+
+  .sidebarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__top {
+    .simleHome {
+      width: 32px;
+      height: 32px;
+      background-color: #7065f0;
+      border-radius: 8px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: white;
+        stroke: #7065f0;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+
+    // .clicked {
+    //   background-color: #7065f0; /* Change background color to red */
+    // }
+  }
+
+  .additional {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 32px;
+    align-items: center;
+
+    // .clicked {
+    //   color: #7065f0; /* Change background color to red */
+    // }
+  }
+  @media(max-width: 1024px){
+    display: none;
+  }
+}
